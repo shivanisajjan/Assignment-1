@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Assignment 1</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Free Web tutorials">
+  	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  	<meta name="author" content="Shivani Sajjan">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/960_12_col.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+</head>
+<body>
+	<header>
+		<div class="c">
+			<img src="img/1.png" alt="logo" width="150" height="80">
+		</div>
+		<div class="vl"></div>
+		<nav class="n1">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Patient Services</a></li>
+				<li><a href="#">Our Specialists</a></li>
+				<li><a href="#">Research</a></li>
+				<li><a href="#">Doctors Appointment</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="sec1">
+		<div>
+			<img class="mySlides" src="img/4.jpg" alt="4" width="1200" height="500">
+			<img class="mySlides" src="img/5.jpg" alt="4" width="1200" height="500">
+			<img class="mySlides" src="img/6.jpeg" alt="4" width="1200" height="500">
+		</div>
+		<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(carousel, 2000); // Change image every 2 seconds
+		}
+		</script>
+	</section>
+	<section>
+		<div class="sec3 container_12">
+			<div class="sec31 grid_4">
+				<img src="img/2.jpg" alt="1" width="320" height="220"/>
+				<h3>Why choose Us.<br>
+					<span class="sp">Because we are Trustworthy.</span>
+				</h3>
+			</div>
+			<div class="sec31 grid_4">
+				<img src="img/3.jpg" alt="2" width="320" height="220">
+				<h3>Our Mission.<br>
+					<span class="sp">Make our patient Happy.</span>
+				</h3>
+			</div>
+			<div class="sec31 grid_4">
+				<img src="img/1.jpg" alt="3" width="320" height="220">
+				<h3>Achievements.<br>
+					<span class="sp">Numbers that makes us proud.</span>
+				</h3>
+			</div>
+		</div>
+	</section>
+	<section class="sec4">
+		<div class="sec41">
+			<h2>Centers for Excellence<br></h2><span class="sp1">Experience it</span>
+			<img src="img/6.jpg" alt="6" width="500" height="500">
+		</div>
+		<div class="sec3 container_12">
+			<div class="sec31 grid_4">
+				<h3>1.Heart</h3>
+				<p>
+					The best team of Heart Specialists and Surgeons available 24X7
+				</p>
+			</div>
+			<div class="sec31 grid_4">
+				<h3>2.CT Surgery</h3>
+				<p>
+					The best center for Minimally Invasive Surgeries and Transplants.
+				</p>
+			</div>
+			<div class="sec31 grid_4">
+				<h3>3.Liver</h3>
+				<p>
+					A dedicated team with experience of over 2700 Liver Transplants.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="sec5">
+		<div class="im">
+			<img src="img/7.jpg" alt="7" />
+		</div>
+		<div class="sec51">
+			<h2>Understanding an Intraoperative Mri</h2>
+			<span class="sp">Reports let you easily track and analyze your product sales, orders, and payments.
+			</span>
+			<p>MRI stands for Magnetic Resonance Imaging. MRI utilizes a powerful magnetic field and radio waves to generate detailed pictures of the inside of your body using computer software.<br><br>
+			Traditionally the patient underwent an MRI scan before the surgery and based on these images the surgery is performed and later the patient is again transferred to the MRI room to reconfirm if the surgery was performed as planned. In case any abnormality is found the patient is subject to another surgery to correct the abnormality. This cycle might repeat a couple of-of times.
+			<a href="#">Learn more →</a><br><br>
+			<div class="box">
+				<a href="#" class="view">View All</a>
+			</div>
+		</div>
+	</section>
+	<footer class="sec61">
+		<div class="sec6 container_12">
+			<ul class="grid_3">
+				<li><h3>About</h3></li>
+				<li><a href="#">Achievements</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Overview</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Awards and recognition</a></li>
+				<li><a href="#">Achievements</a></li>
+				<li><a href="#">Specialists</a></li>
+			</ul>
+			<ul class="grid_3">
+				<li><h3>Locations</h3></li>
+				<li><a href="#">Hyderabad</a></li>
+				<li><a href="#">Bangalore</a></li>
+				<li><a href="#">Chennai</a></li>
+				<li><a href="#">Mumbai</a></li>
+			</ul>
+			<ul class="grid_3">
+				<li><h3>Recent Posts</h3></li>
+				<li>The Hindu</li>
+				<li style="font-style: italic;font-size: 15px;">10th September 2018</li>
+				<li>-----------------------------------------</li>
+				<li>Medicine magazine</li>
+				<li style="font-style: italic;font-size: 15px;">10th November 2018</li>
+			</ul>
+			<ul class="grid_3">
+				<li><h3>Education</h3></li>
+				<li><a href="#">Introduction</a></li>
+				<li><a href="#">Medical Courses</a></li>
+				<li><a href="#">Nursing</a></li>
+				<li><a href="#">Para Medical Courses</a></li>
+				<li><a href="#">Women Wellness Checkup</a></li>
+			</ul>
+		</div>
+		<p style="color: white;padding-left: 80px;">___________________________________________________________________________________________________________________________________</p>
+		<p class="co">&copy; 2019. SSM Health. All Rights Reserved |
+			<a href="#"> Terms & Conditions </a>
+			<a href="#"><img src="img/fb.png" alt="fb" width="40" height="40" class="im1" /></a>
+			<a href="#"><img src="img/twitter.png" alt="6" width="40" height="40"></a>
+			<a href="#"><img src="img/in.png" alt="6" width="40" height="40"></a>
+			<a href="#"><img src="img/pin.png" alt="6" width="40" height="40"></a>
+			<a href="#"><img src="img/insta.png" alt="6" width="40" height="40"></a>
+		</p>
+	</footer>
+</body>
+</html>
